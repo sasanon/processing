@@ -14,7 +14,7 @@ void draw(){
     vx *= -1;
   }
   if(y < 0 || height < y) {
-    vy *= -1.01;
+    vy *= -1;
   }
 }
 
