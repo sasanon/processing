@@ -22,6 +22,7 @@ void setup(){
   size(400,400,P3D);
   fill(255);
   noStroke();
+  colorMode(HSB,100,100,100);
 }
 
 void draw(){
@@ -38,6 +39,7 @@ void draw(){
     PVector v1 = new PVector(cos(i*2*PI/face)*100, 100,sin(i*2*PI/face)*100);
     PVector v2 = new PVector(cos((i+1)*2*PI/face)*100,-100,sin((i+1)*2*PI/face)*100);
     PVector v3 = new PVector(cos((i+1)*2*PI/face)*100, 100,sin((i+1)*2*PI/face)*100);
+    fill(i*100/face,100,100);
     makeQuad(v0,  v1,  v2,  v3 );
     makeTriangle(v0, new PVector(0,-100,0), v2);
     makeTriangle(v1, new PVector(0, 100,0), v3);
